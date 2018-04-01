@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />  
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.1" />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />  
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /> 
+        
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Models\SchoolViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Student\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20180331211320_ColumnFirstName.cs" />
+    <Compile Remove="Migrations\20180331211320_ColumnFirstName.Designer.cs" />
+    <Compile Remove="Migrations\20180331222716_ComplexDataModel.cs" />
+    <Compile Remove="Migrations\20180331222716_ComplexDataModel.Designer.cs" />
+    <Compile Remove="Migrations\SchoolContextModelSnapshot.cs" />
+    <Compile Remove="Migrations\20180331223419_Department.cs" />
+    <Compile Remove="Migrations\20180331223637_Initial.cs" />
+    <Compile Remove="Migrations\20180331223637_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20180331224010_ComplexDataModel.cs" />
+    <Compile Remove="Migrations\20180331224010_ComplexDataModel.Designer.cs" />
+    <Compile Remove="Migrations\20180401005302_Initial.cs" />
+    <Compile Remove="Migrations\20180401135352_RowVersion.cs" />
+    <Compile Remove="Migrations\20180401135352_RowVersion.Designer.cs" />
+    <Compile Remove="Migrations\20180401150435_Inheritance.cs" />
+  </ItemGroup>
+</Project>
